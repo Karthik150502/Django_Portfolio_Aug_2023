@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=M+PLUS+1p:wght@100&family=Montserrat:wght@200&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script  src="{% static 'scripts/basestyle.js' %}"></script>
+    <script src="{% static 'script/baselogic.js' %}"></script>
+    {% block extrahead %} {% endblock %}
+</head>
+
+
+<body onload="imgslide()">
+    <div class="wrapper">
+        <nav class="nav-bar" id="nav-bar">
+            <div class="brand">
+
+            </div>
+            <ul>
+                <li class="nav-items" id="thehome">
+                    <a href="{% url 'web_app:index' %}">Home</a> 
+                </li>
+                <li class="nav-items">
+                    <a href="{% url 'web_app:works' %}">Works</a> 
+                </li>
+                <li class="nav-items">
+                    <a href="{% url 'web_app:about' %}">About</a> 
+                </li>
+                <li class="nav-items">
+                    <a href="{% url 'web_app:hireme' %}">Hire me!</a> 
+                </li>
+            </ul>
+        </nav>
+        <!-- <marquee behavior="scroll" direction="left"><h1>Hope and hustle.!!</h1></marquee> -->
+        <div class="myimage">
+            <img id="myimage" src="{% static 'images/myimage.png' %}" alt="">
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
+
+</body>
+</html>

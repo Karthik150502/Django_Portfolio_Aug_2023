@@ -1,0 +1,42 @@
+
+
+.content{
+    transition: all 0.2s ease 0.05s;
+    display: block;
+    width: 60%;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    border-radius: 20px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y:visible;
+    height: 50%;
+}
+.context{
+    /* display: inline-block; */
+    font-size: 16px;
+    /* text-align: center; */
+    /* background-color:#0047ab63; */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.context p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

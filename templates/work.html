@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block extrahead %}
+    <title>Works</title>
+    <link rel="stylesheet" href="{% static 'css/workstyle.css' %}">
+    {% endblock %}
+</head>
+
+
+<body>
+    <div class="wrapper">
+
+        {% block content %}
+        <div class="cards">
+            <!-- <p class="head1">HTML/ CSS/ JavaScript</p> -->
+            <div class="main-card">
+                <div class="image">
+                    <img src="{% static 'images/loginproj.png' %}" alt="">
+                    <div class="contents">
+                        <p>A basic registration form with subtle styling!</p>
+                        <p>A basic registraion form, with subtle styling added with some basic error validations and error notifications!.</p>
+                        <button><a href="https://github.com/Karthik150502/LogIn_Page" target="_blank">Source</a></button>
+                        <button><a href="https://warm-vacherin-4ff7cf.netlify.app/" target="_blank">Demo</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="image">
+                    <img src="{% static 'images/bouncing_ball.png' %}" alt="">
+                    <div class="contents">
+                        <p>An animated bouncing ball!</p>
+                        <p>An animated bouncing ball, with some smart detailing, done only using HTML and CSS!</p>
+                        <button><a href="https://github.com/Karthik150502/Animated-Ball" target="_blank">Source</a></button>
+                        <button><a href="https://serene-frangollo-5dc749.netlify.app/" target="_blank">Demo</a></button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="main-card">
+                <div class="image">
+                    <img src="{% static 'images/loading_animation2.png' %}" alt="">
+                    <div class="contents">
+                        <p>A smooth loading animation!</p>
+                        <p>A aesthetic loading animation, with an aesthetic font! Only done usinh HTML and CSS.</p>
+                        <button><a href="https://github.com/Karthik150502/LoadingAnimaion2" target="_blank">Source</a></button>
+                        <button><a href="https://golden-liger-47e74b.netlify.app/" target="_blank">Demo</a></button>
+                    </div>
+                </div>
+        
+            </div>
+            <div class="main-card">
+                <div class="image">
+                    <img src="{% static 'images/periodic_table.png' %}" alt="">
+                    <div class="contents">
+                        <p>Periodic Table!</p>
+                        <p>The periodic table, with all its elements, and some hidden surprise animations, hover through some elements to know!</p>
+                        <button><a href="https://github.com/Karthik150502/Periodic_Table" target="_blank">Source</a></button>
+                        <button><a href="https://tubular-madeleine-d58785.netlify.app/" target="_blank">Demo</a></button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="main-card">
+                <div class="image">
+                    <img src="{% static 'images/glowing_text.png' %}" alt="">
+                    <div class="contents">
+                        <p>Glowing text!</p>
+                        <p>A text that glows like a LED bulb, but also blinks infinitely with some great fonts! Some fun with HTML and CSS.</p>
+                        <button><a href="https://github.com/Karthik150502/text_Glow" target="_blank">Source</a></button>
+                        <button><a href="https://snazzy-queijadas-c2c6df.netlify.app/" target="_blank">Demo</a></button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="main-card">
+                <div class="image">
+                    <img src="{% static 'images/basic_calculator.png' %}" alt="">
+                    <div class="contents">
+                        <p>A basic Calculator!</p>
+                        <p>Basic calculator for some small mathematical calculations, with modulous operator also!</p>
+                        <button><a href="https://github.com/Karthik150502/Basic_Calculator" target="_blank">Source</a></button>
+                        <button><a href="https://melodic-llama-c8421f.netlify.app/" target="_blank">Demo</a></button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+
+        {% endblock %}
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+
+    font-weight: 750;
+    /* font-size: 12px; */
+    font-family: 'Cinzel', serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+body{
+    /* background-color: black; */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.2s ease 0.05s;
+    /* background-image: linear-gradient(90deg, aqua, white); */
+}
+
+body h1{
+    font-size: 150px;
+    background-image: linear-gradient(90deg, aqua, darkblue, white, black);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+
+body marquee{
+    z-index: -10;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-bar{
+    transition:all 0.2s ease 0.05s;
+    /* position: absolute; */
+    /* top: -60px; */
+    background-color:#0047AB;
+    width:95%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.nav-bar *{
+    color: white;
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.nav-bar li{
+    padding:8px ;
+    margin: 0px 10px;
+    list-style-type: none;
+    border-radius: 10px;
+    transition: all 0.2s ease 0.05s;
+}
+
+
+.nav-bar:hover li{
+    filter: blur(5px);
+}
+
+.nav-bar:hover li:hover{
+    filter: blur(0px);
+    transform: scale(1.1);
+}
+
+.nav-bar:hover li:active{
+    color: aqua;
+}
+
+
+
+
+
+.nav-bar a{
+    font-size: 22px;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
+.nav-bar a:link{
+    color: black;
+}
+
+.nav-items.active{
+    background-color: rgba(8, 8, 152, 0.614);
+}
+
+
+.myimage img{
+    position: absolute;
+    top: 35%;
+    right: 95%;
+    height: 400px;
+    aspect-ratio: 15/9;
+    filter: brightness(75%);
+    filter: contrast(125%)
+}

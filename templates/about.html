@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block extrahead %}
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/aboutstyle.css' %}">
+    {% endblock %}
+</head>
+
+
+<body>
+    <div class="wrapper">
+
+        {% block content %}
+        <div class="content" id="content">
+            <div class="context">
+                <p>
+                    Greetings Ladies and Gentlemen!
+                    My name is Karthik J., i am from Bangalore, India. I basically belong to a Telugu Family, my father
+                    is a retired Army personnel, an Ex-Servicemen, who works for the MES now, and my mother is a Teacher who teach Social, Hindi, English subjects for elementary school.
+                    I have completed my undergraduate degree in Mechanical Engineering from Bangalore Institute of Technology, received my graduation on 2023 May!
+                    I have been practising Software Engineering for 2 years now, and i have an immense interest and love for coding and Web development!
+                    <!-- <a href="https://drive.google.com/file/d/10Vpdpvp_ZSGYKCx4zgcw8SDETdvcA9h-/view?usp=drive_link" target="_blank">click here! -->
+
+                    </a>
+                </p>
+            </div>
+            <!-- <button class="close">X</button> -->
+            <!-- <input type="button" class="close" value="X"> -->
+        </div>
+        {% endblock %}
+    </div>
+
+</body>
+</html>

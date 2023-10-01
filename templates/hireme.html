@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extrahead %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KarthikJ_Portfolio</title>
+<link rel="stylesheet" href="{% static 'css/hiremestyle.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="content" id="content">
+        <div class="context">
+            <div class="card">
+                Please, mention your name and emailId so that i will be notified and revert to you ASAP!
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="Send mail!">
+                </form>
+            </div>
+        </div>
+        <!-- <button class="close">X</button> -->
+        <!-- <input type="button" class="close" value="X"> -->
+    </div>
+{% endblock %}

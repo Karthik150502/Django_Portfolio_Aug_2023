@@ -1,0 +1,133 @@
+.cards{
+    z-index: -10;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y:visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    /* width: 50%; */
+    height: 75%;
+    width: 80%;
+    
+}
+
+
+
+
+.btns{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: row;
+}
+
+
+
+.btns a:link{
+    text-decoration: none;
+}
+
+.btns a:active{
+    color: white;
+}
+
+.btns a:visited{
+    color: white;
+}
+
+.btns button{
+    color: white;
+    border: none;
+    background-color: #457be7;
+
+    font-size: 12px;
+    padding: 5px;
+    transition: all 0.2s ease 0.05s;
+    margin: 5px;
+}
+
+
+.btns button:hover{
+    transform:scale(1.1);
+}
+
+
+
+[class="main-card"]{
+    text-align: center;
+    width: 20%;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: contain;
+    overflow: hidden;
+    height: 275px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.main-card img{
+    height: 100%;
+    width: 100%;
+}
+
+.main-card button{
+    margin: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    /* outline: 2px solid grey;
+    outline-offset: -1px; */
+    transition: all 0.2s ease 0.05s;
+}
+
+
+.main-card .contents{
+    padding: 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.669);
+    bottom:-125px;
+    font-size: 10px;
+    transition: all 0.2s ease 0.05s;
+}
+
+.main-card:hover {
+    & .contents{
+        bottom: 165px;
+    }
+    
+}
+
+.main-card button:hover{
+    /* outline-offset: 1px; */
+    transform: scale(1.2);
+}
+
+
+
+.main-card .contents a:link{
+    text-decoration: none;
+}
+
+
+.main-card .contents a:active{
+    color: white;
+}
+
+
+.main-card .contents a:visited{
+    color: white;
+}
+
+.head1{
+    font-size: 30px;
+}
